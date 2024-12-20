@@ -10,9 +10,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
     <script src="/node_modules/animejs/lib/anime.min.js"></script>
-    <script type="module" src="./js/index.mjs"></script>
+    <script type="module" src="./src/index.mjs"></script>
     <title>Anime.js</title>
   </head>
   <body>
@@ -22,138 +22,709 @@
         <section class="section">
           <div class="container">
             <div class="decorator-box">
-              <div class="rubik">
+              <div class="rubik-container">
                 <div class="cube" data-id="0">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
-                </div>
-                <div class="cube" data-id="2">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
-                </div>
-                <div class="cube" data-id="1">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
 
-                <div class="cube" data-id="4">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                <div class="cube" data-id="1">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
+
+                <div class="cube" data-id="2">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
                 <div class="cube" data-id="3">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
+
+                <!-- <div class="cube" data-id="4">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
                 <div class="cube" data-id="5">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
 
                 <div class="cube" data-id="6">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
+
                 <div class="cube" data-id="7">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
+
                 <div class="cube" data-id="8">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
 
                 <div class="cube" data-id="9">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
+
                 <div class="cube" data-id="10">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
+
                 <div class="cube" data-id="11">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
-                <!-- <div class="cube" data-id="12">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+
+                <div class="cube" data-id="12">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
 
                 <div class="cube" data-id="13">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div>
+
                 <div class="cube" data-id="14">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
-                </div> -->
-                <!-- <div class="cube" data-id="15">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="15">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="16">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="17">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="18">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="19">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="20">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="21">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="22">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="23">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="24">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="25">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="26">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="27">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="28">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="29">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="30">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="31">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="32">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="33">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="34">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="35">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="36">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="37">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="38">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="39">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="40">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="41">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="42">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="43">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="44">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="45">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="46">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="47">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="48">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="49">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="50">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="51">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="52">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="53">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="54">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="55">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="56">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="57">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="58">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="59">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="60">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="61">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="62">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
+                </div>
+
+                <div class="cube" data-id="63">
+                  <div class="cube-face front-face"></div>
+                  <div class="cube-face back-face"></div>
+
+                  <div class="cube-face top-face"></div>
+                  <div class="cube-face bottom-face"></div>
+
+                  <div class="cube-face left-face"></div>
+                  <div class="cube-face right-face"></div>
                 </div> -->
               </div>
             </div>
