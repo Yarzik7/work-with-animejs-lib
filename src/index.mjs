@@ -1,5 +1,3 @@
-import anime from 'animejs';
-
 import rubikComponent from './components/rubikComponent.mjs';
 
 const boxRef = document.querySelector('.decorator-box');
