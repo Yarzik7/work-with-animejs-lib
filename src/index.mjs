@@ -10,7 +10,7 @@ anime({
   easing: 'linear',
   rotateY: 360,
   rotateX: 360,
-  duration: 8000,
+  duration: 7000,
 });
 
 boxRef.append(rubik);
